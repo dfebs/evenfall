@@ -23,6 +23,8 @@
   </head>
 
   <body>
+    <%= button_to "Log Out", session_path, method: :delete if authenticated? %>
+    <%= link_to "Register", new_user_path if !authenticated? %>
     <%= yield %>
   </body>
 </html>
