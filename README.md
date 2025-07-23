@@ -1,5 +1,5 @@
 # Evenfall
-A Ruby on Rails web app for tracking bugs.
+A Ruby on Rails web app for group chats.
 
 ## Requirements
 - Ruby Version: 3.4.3 or newer
