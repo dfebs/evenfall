@@ -1,2 +1,4 @@
-<p><b><%= message.user.username %></b></p>
-<%= message.content %>
+<div id=<%= combined_dom_id(room, message) %>>
+    <p><b><%= message.user.username %></b></p>
+    <%= message.content %>
+</div>

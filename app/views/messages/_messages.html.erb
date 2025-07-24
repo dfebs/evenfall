@@ -1,5 +1,6 @@
+<%= turbo_stream_from "room_messages_sub_#{room.id}" %>
 <div id="messages">
     <% messages.each do |message| %>
-        <%= render "messages/message", message: message %>
+        <%= render "messages/message", message: message, room: room %>
     <% end %>
 </div>
