@@ -13,8 +13,9 @@ html, body {
     background-color: var(--background);
 }
 
-p {
+p, .trix-content, label {
     color: var(--text);
+    font-family: 'Corbel';
 }
 
 a {
@@ -32,8 +33,4 @@ button, input[type="submit"] {
 
 h1 {
     font-family: 'Palatino Linotype';
-}
-
-p, .trix-content {
-    font-family: 'Corbel';
 }
