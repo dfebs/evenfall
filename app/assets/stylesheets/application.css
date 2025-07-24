@@ -21,7 +21,7 @@ a {
     color: var(--links)
 }
 
-button {
+button, input[type="submit"] {
     all: unset;
     border-radius: 0.5em;
     background-color: var(--links);

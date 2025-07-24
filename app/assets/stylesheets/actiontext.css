@@ -3,7 +3,7 @@
 */
 
 trix-editor {
-  border: 1px solid #bbb;
+  border: 1px solid var(--border-color);
   border-radius: 3px;
   margin: 0;
   padding: 0.4em 0.6em;
@@ -22,9 +22,9 @@ trix-toolbar .trix-button-row {
 trix-toolbar .trix-button-group {
   display: flex;
   margin-bottom: 10px;
-  border: 1px solid #bbb;
-  border-top-color: #ccc;
-  border-bottom-color: #888;
+  border: 1px solid var(--border-color);
+  border-top-color: var(--border-color);
+  border-bottom-color: var(--border-color);
   border-radius: 3px; }
   trix-toolbar .trix-button-group:not(:first-child) {
     margin-left: 1.5vw; }
@@ -344,7 +344,9 @@ trix-editor .attachment__metadata {
   .trix-content * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    color: var(--text)
+  }
   .trix-content h1 {
     font-size: 1.2em;
     line-height: 1.2; }
