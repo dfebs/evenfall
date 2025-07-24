@@ -8,3 +8,24 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+html, body {
+    background-color: var(--background);
+}
+
+p {
+    color: var(--text);
+}
+
+a {
+    color: var(--links)
+}
+
+button {
+    all: unset;
+    border-radius: 0.5em;
+    background-color: var(--links);
+    padding: 0.5em;
+    cursor: pointer;
+    color: var(--background)
+}
