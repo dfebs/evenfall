@@ -29,3 +29,11 @@ button, input[type="submit"] {
     cursor: pointer;
     color: var(--background)
 }
+
+h1 {
+    font-family: 'Palatino Linotype';
+}
+
+p, .trix-content {
+    font-family: 'Corbel';
+}

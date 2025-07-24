@@ -1,0 +1,7 @@
+<%= turbo_stream.append "messages" do %>
+    <%= render "messages/message", message: @message %>
+<% end %>
+
+<%= turbo_stream.replace dom_id(Message.new) do %>
+    <%= render "messages/form", message: Message.new, room: @message.room %>
+<% end %>

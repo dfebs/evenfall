@@ -1,0 +1,7 @@
+<%= turbo_frame_tag combined_dom_id(room, message) do %>
+    <%= form_with model: [room, message] do | form | %>
+        <%= form.hidden_field :user_id, value: Current.user.id if authenticated? %>
+        <%= form.rich_text_area :content %>
+        <%= form.submit %>
+    <% end %>
+<% end %>
