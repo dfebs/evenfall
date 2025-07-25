@@ -37,10 +37,20 @@ h1 {
 
 .room_message {
     padding: 0.5em;
+    margin: 8px;
 }
 
 .room_message:hover {
-    background-color: var(--color-2);
+    background-color: var(--highlight);
     border-radius: 0.5em;
     padding: 0.5em;
+}
+
+header, #sidebar, #messages {
+    border: solid;
+    border-color: var(--border-color);
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    border-width: 2px;
+    margin: 8px;
 }
