@@ -1,5 +1,7 @@
-<p>It works!</p>
-<% @rooms.each do | room | %>
-    <%= render "rooms/room_card", room: room %>
-<% end %>
-<%= link_to "Create Room", new_room_path %>
+<div id="chat_rooms">
+    <p>It works!</p>
+    <% @rooms.each do | room | %>
+        <%= render "rooms/room_card", room: room %>
+    <% end %>
+    <%= link_to "Create Room", new_room_path %>
+</div>

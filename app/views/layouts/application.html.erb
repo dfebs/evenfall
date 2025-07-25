@@ -30,6 +30,12 @@
       <% else %>
         <%= link_to "Register", new_user_path %>
     <% end %>
-    <%= yield %>
+    <div id="root_grid">
+      <%# Put navbar here %>
+      <div id="content_grid">
+        <%= yield %>
+      </div>
+      <%# Put footer here %>
+    </div>
   </body>
 </html>

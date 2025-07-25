@@ -1,0 +1,17 @@
+#root_grid {
+    display: grid;
+    grid-template-rows: 5% 90% 5%;
+}
+
+#content_grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.chat_room, #chat_rooms {
+    grid-column: 2 / 3;
+}
+
+#sidebar {
+    grid-column: 2 / 3;
+}

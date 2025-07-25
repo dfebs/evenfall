@@ -1,5 +1,5 @@
 <%# TODO: Make this a grid of 1 column, 2 rows. Top row is the actual chat room, and then bottom row is the little form %>
-<div id=<%= dom_id(room) %>>
+<div id=<%= dom_id(room) %> class="chat_room">
     <%= render "messages/messages", room: room, messages: room.messages %>
     <%= render "messages/form", room: room, message: Message.new %>
 </div>
