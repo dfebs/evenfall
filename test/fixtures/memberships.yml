@@ -3,7 +3,9 @@
 one:
   user: one
   room: one
+  role: owner
 
 two:
   user: two
   room: two
+  role: owner

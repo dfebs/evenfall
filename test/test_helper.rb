@@ -1,9 +1,13 @@
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
+require_relative "support/test_constants"
+require_relative "helpers/system_test_helpers"
 require "rails/test_help"
 
 module ActiveSupport
   class TestCase
+    include SystemTestHelpers
+
     # Run tests in parallel with specified workers
     parallelize(workers: :number_of_processors)
 
