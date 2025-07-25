@@ -34,3 +34,13 @@ button, input[type="submit"] {
 h1 {
     font-family: 'Palatino Linotype';
 }
+
+.room_message {
+    padding: 0.5em;
+}
+
+.room_message:hover {
+    background-color: var(--color-2);
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
