@@ -1,5 +1,6 @@
 <div id=<%= combined_dom_id(room, message) %> class="room_message">
-    <p><b><%= message.user.username %></b></p>
+    <%# <%= profile_picture(message.user) TODO at some point probably%>
+    <span><b><%= message.user.username %>:</b></span>
     <%= message.content %>
     <br>
 </div>
