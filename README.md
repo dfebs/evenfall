@@ -14,8 +14,9 @@ bin/rails db:setup
 bin/rails server
 ```
 
-Notes and todo
+## Notes and todo
 
+- [ ] Try and get the chat box to scroll when sending or receiving a message
 - [ ] Globally prevent mobile from zooming in when pressing selecting text fields
 - [ ] Going to the room when it isn't created yet can show a page with a button that has you claim it. It will be a form with an invisible name entry.
 - [ ] Make it so user isn't a hidden field when creating a message
