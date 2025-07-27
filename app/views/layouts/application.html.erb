@@ -23,15 +23,8 @@
   </head>
 
   <body>
-    <% if authenticated? %>
-      <%= link_to "Home", root_path %>
-      <%= button_to "Log Out", session_path, method: :delete %>
-
-      <% else %>
-        <%= link_to "Register", new_user_path %>
-    <% end %>
     <div id="root_grid">
-      <%# Put navbar here %>
+      <%= render "layouts/nav" %>
       <div id="content_grid">
         <%= yield %>
       </div>

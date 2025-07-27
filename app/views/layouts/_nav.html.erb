@@ -1,0 +1,10 @@
+<nav>
+    <ul class="navbar">
+        <% if authenticated? %>
+            <li><%= link_to "Home", root_path, class: "navbutton" %></li>
+            <li><%= button_to "Log Out", session_path, method: :delete %></li>
+        <% else %>
+            <%= link_to "Register", new_user_path, class: "navbutton" %>
+        <% end %>
+    </ul>
+</nav>
