@@ -1,7 +1,9 @@
-<%= turbo_frame_tag combined_dom_id(room, message) do %>
+<div data-controller="message-form">
+    <%= turbo_frame_tag combined_dom_id(room, message) do %>
     <%= form_with model: [room, message] do | form | %>
         <%= form.hidden_field :user_id, value: Current.user.id if authenticated? %>
-        <%= form.rich_text_area :content %>
-        <%= form.submit %>
+        <%= form.rich_text_area :content, data: { "message-form-target": "textBox" } %>
+        <%= form.submit id: "send_message", data: { "message-form-target": "submitButton" }  %>
     <% end %>
 <% end %>
+</div>

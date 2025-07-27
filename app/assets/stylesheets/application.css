@@ -59,6 +59,8 @@ h1 {
 }
 
 header, #sidebar, #messages {
+    display: flex;
+    flex-direction: column;
     border: solid;
     border-color: var(--border-color);
     border-radius: 0.5em;
@@ -66,7 +68,7 @@ header, #sidebar, #messages {
     border-width: 2px;
     margin: 8px;
     overflow-y: auto;
-    max-height: 75vh
+    max-height: 75vh;
 }
 
 @media (max-height: 1100px) {
