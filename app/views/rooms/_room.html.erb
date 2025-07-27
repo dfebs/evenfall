@@ -6,16 +6,3 @@
     <%= render "messages/messages", room: room, messages: room.messages %>
     <%= render "messages/form", room: room, message: Message.new %>
 </div>
-
-<script>
-    const messages = document.getElementById("messages");
-    const options = { childList: true };
-
-    const scrollCallback = (mutations, observer) => {
-        messages.children[messages.children.length - 1].scrollIntoView();
-    };
-
-    const scrollObserver = new MutationObserver(scrollCallback);
-
-    scrollObserver.observe(messages, options);
-</script>
