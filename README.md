@@ -16,6 +16,7 @@ bin/rails server
 
 ## Notes and todo
 
+- [x] Make a navbar
 - [ ] Try and get the chat box to scroll when sending or receiving a message
 - [ ] Globally prevent mobile from zooming in when pressing selecting text fields
 - [ ] Going to the room when it isn't created yet can show a page with a button that has you claim it. It will be a form with an invisible name entry.
