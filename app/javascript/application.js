@@ -4,3 +4,12 @@ import "controllers"
 
 import "trix"
 import "@rails/actiontext"
+
+const element = document.querySelector("trix-editor")
+
+element.addEventListener("keydown", event => {
+  if (event.key == "Enter") {
+    event.preventDefault()
+    element.inputElement.form.submit()
+  }
+});
