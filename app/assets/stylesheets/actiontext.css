@@ -3,7 +3,7 @@
 */
 
 trix-editor {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border);
   border-radius: 3px;
   margin: 0;
   padding: 0.4em 0.6em;
@@ -22,9 +22,9 @@ trix-toolbar .trix-button-row {
 trix-toolbar .trix-button-group {
   display: flex;
   margin-bottom: 10px;
-  border: 1px solid var(--border-color);
-  border-top-color: var(--border-color);
-  border-bottom-color: var(--border-color);
+  border: 1px solid var(--border);
+  border-top-color: var(--border);
+  border-bottom-color: var(--border);
   border-radius: 3px; }
   trix-toolbar .trix-button-group:not(:first-child) {
     margin-left: 1.5vw; }

@@ -11,6 +11,8 @@
 
 html, body {
     background-color: var(--background);
+    height: 100%;
+    margin: 0;
 }
 
 p, .trix-content, label, h1, h2, h3, h4, h5, h6, span {
@@ -19,10 +21,22 @@ p, .trix-content, label, h1, h2, h3, h4, h5, h6, span {
     line-height: 24px
 }
 
-input,
-textarea,
-select {
+label {
+    margin-right: 1em;
+}
+
+
+input[type="text"], input[type="file"], input[type="email"], input[type="password"], input[type="number"], select, textarea {
+  background-color: transparent;
+  padding: 0.25em;
+  border-color: var(--border);
+  color: var(--text);
   font-size: 16px;
+  outline: none;
+}
+
+input[type="password"] {
+    width: 11.8rem;
 }
 
 a {
@@ -46,7 +60,7 @@ header, #sidebar, #messages {
     display: flex;
     flex-direction: column;
     border: solid;
-    border-color: var(--border-color);
+    border-color: var(--border);
     border-radius: 0.5em;
     padding-left: 0.5em;
     border-width: 2px;
@@ -68,11 +82,18 @@ header, #sidebar, #messages {
 
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
 img.profile-picture {
   width: 48px;
   height: 48px;
   border: solid;
   border-radius: 3px;
   border-width: 1px;
-  border-color: var(--border-color);
+  border-color: var(--border);
 }

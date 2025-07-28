@@ -1,29 +1,33 @@
-<h1>NOTE: THIS IS A PRIMITIVE PIECE OF SOFTWARE</h1>
-<p>While it does hash passwords and all that fancy stuff, I'd still recommend using a password you don't normally use. You can use fake emails as long as they look like an email.</p>
+<div id="form_flex">
+    <h1>Evenfall</h1>
+    <p>Chat with cool people.</p>
+    <div class="form_center">
+        <%= form_with model: @user do |form| %>
+            <h2 style="margin: 0 auto">Register</h2>
+                <%= tag.div(flash[:alert], style: "color:var(--alert)") if flash[:alert] %>
+                <%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
+            <div>
+                <%= form.email_field :email_address, placeholder: "Enter your email address" %>
+            </div>
+            <div>
+                <%= form.text_field :username, placeholder: "Enter your username" %>
+            </div>
+            <div>
+                <%= form.password_field :password, placeholder: "Enter your password" %>
+            </div>
+            <div>
+                <%= form.password_field :password_confirmation, placeholder: "Confirm your password" %>
+            </div>
+            <div>
+                <%= form.label :profile_picture %>
+            </div>
+            <div>
+                <%= form.file_field :profile_picture, accept: ['image/jpg', 'image/png'] %>
+            </div>
+            <div>
+                <%= form.submit %>
+            </div>
+        <% end %>
+    </div>
+</div>
 
-<h1>Register New User</h1>
-<%= form_with model: @user do |form| %>
-    <div>
-        <%= form.label :email_address %>
-        <%= form.email_field :email_address %>
-    </div>
-    <div>
-        <%= form.label :username %>
-        <%= form.text_field :username %>
-    </div>
-    <div>
-        <%= form.label :password %>
-        <%= form.password_field :password %>
-    </div>
-    <div>
-        <%= form.label :password_confirmation %>
-        <%= form.password_field :password_confirmation %>
-    </div>
-    <div>
-        <%= form.label :profile_picture %>
-        <%= form.file_field :profile_picture, accept: ['image/jpg', 'image/png'] %>
-    </div>
-    <div>
-        <%= form.submit %>
-    </div>
-<% end %>

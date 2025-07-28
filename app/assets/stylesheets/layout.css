@@ -8,6 +8,21 @@
     grid-template-columns: 20% 80%;
 }
 
+#form_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh
+}
+
+.form_center {
+    display: flex;
+    background-color: var(--highlight);
+    border-radius: 16px;
+    padding: 1em
+}
+
 .chat_room, #chat_rooms {
     grid-column: 2 / 3;
     min-width: 0px;

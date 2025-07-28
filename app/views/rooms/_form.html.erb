@@ -1,6 +1,11 @@
-<%= form_with model: room do | form | %>
-    <%= form.label :name %>
-    <%= form.text_field :name, required: true %>
+<div id="form_flex">
+    <h1>Evenfall</h1>
+    <div class="form_center">
+        <%= form_with model: room do | form | %>
+            <%= form.label :name %>
+            <%= form.text_field :name, required: true %>
 
-    <%= form.submit %>
-<% end %>
+            <%= form.submit %>
+        <% end %>
+    </div>
+</div>

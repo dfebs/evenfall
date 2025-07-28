@@ -9,7 +9,8 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to new_session_path, notice: "User successfully created! Now login"
     else
-      render new_user_path, alert: "There was an issue creating the user!"
+      flash.now[:alert] = "There was an issue creating the user!"
+      render :new, status: :unprocessable_entity
     end
   end
 
