@@ -1,0 +1,5 @@
+<ul>
+    <% Current.user.rooms.each do | room | %>
+        <li><%= render "rooms/room_card", room: room %></li>
+    <% end %>
+</ul>

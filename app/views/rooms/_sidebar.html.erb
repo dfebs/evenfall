@@ -1,6 +1,4 @@
 <div id="sidebar">
     <h1>Your Rooms</h1>
-    <% Current.user.rooms.each do | room | %>
-        <%= render "rooms/room_card", room: room %>
-    <% end %>
+    <%= render "rooms/room_cards", rooms: Current.user.rooms %>
 </div>

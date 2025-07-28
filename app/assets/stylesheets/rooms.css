@@ -1,0 +1,17 @@
+.room_message {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.5em;
+    margin: 8px;
+    gap: 0.5em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.room_message:hover {
+    background-color: var(--highlight);
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+}
+
+/* .room_card {} */
