@@ -22,7 +22,8 @@ export default class extends Controller {
   }
 
   scrollMessagesToBottom = () => {
-    this.messagesTarget.children[this.messagesTarget.children.length - 1].scrollIntoView();
+    const lastChild = this.messagesTarget.children[this.messagesTarget.children.length - 1]
+    if (lastChild) lastChild.scrollIntoView();
   }
 
   handleFrameLoad = (event) => {

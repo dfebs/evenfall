@@ -20,6 +20,7 @@ bin/rails server
 - [x] Try and get the chat box to scroll when sending or receiving a message
 - [x] Globally prevent mobile from zooming in when pressing selecting text fields
 - [x] Make the actual chat itself a scrollable box
+- [ ] Update message box to already fill the screen
 - [ ] Going to the room when it isn't created yet can show a page with a button that has you claim it. It will be a form with an invisible name entry.
 - [ ] Make it so user isn't a hidden field when creating a message
 - [ ] Message loading: First set of messages is loaded with a turbo frame button + latest 10 entries. Button when pressed can return a turbo stream which has next 10 messages and then itself.

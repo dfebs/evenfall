@@ -45,7 +45,7 @@ h1 {
 .room_message {
     display: flex;
     flex-direction: row;
-    padding: 0.5em;
+    padding-left: 0.5em;
     margin: 8px;
     gap: 0.5em;
     align-items: flex-start;
@@ -55,7 +55,7 @@ h1 {
 .room_message:hover {
     background-color: var(--highlight);
     border-radius: 0.5em;
-    padding: 0.5em;
+    padding-left: 0.5em;
 }
 
 header, #sidebar, #messages {
