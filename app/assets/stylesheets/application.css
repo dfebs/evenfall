@@ -66,7 +66,7 @@ header, #sidebar, #messages {
     border-width: 2px;
     margin: 8px;
     overflow-y: auto;
-    max-height: 75vh;
+    max-height: 70vh;
 }
 
 #sidebar ul {
@@ -82,7 +82,7 @@ header, #sidebar, #messages {
 
 }
 
-form {
+form.simple_form {
     display: flex;
     flex-direction: column;
     gap: 1em;

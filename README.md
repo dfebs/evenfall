@@ -20,7 +20,9 @@ bin/rails server
 - [x] Try and get the chat box to scroll when sending or receiving a message
 - [x] Globally prevent mobile from zooming in when pressing selecting text fields
 - [x] Make the actual chat itself a scrollable box
-- [ ] Make new user experience good this time. Add centered login / register screen if user not logged in. Maybe default to register and have a "login instead" at the bottom of that.
+- [x] Make new user experience good this time. Add centered login / register screen if user not logged in.
+- [ ] Nav bar overlaps room title on mobile
+- [ ] Show the correct errors when passwords don't match or if username/email is duplicate
 - [ ] Make subscribe button to make user a basic member of the group. If nothing else, the room will show up on the sidebar for them.
 - [ ] Maybe add room descriptions
 - [ ] On sidebar, sort rooms by owned first, then subscribed. 

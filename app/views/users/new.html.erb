@@ -2,7 +2,7 @@
     <h1>Evenfall</h1>
     <p>Chat with cool people.</p>
     <div class="form_center">
-        <%= form_with model: @user do |form| %>
+        <%= form_with model: @user, class: "simple_form" do |form| %>
             <h2 style="margin: 0 auto">Register</h2>
                 <%= tag.div(flash[:alert], style: "color:var(--alert)") if flash[:alert] %>
                 <%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
