@@ -1,6 +1,6 @@
 #root_grid {
     display: grid;
-    grid-template-rows: 5% 90% 5%;
+    grid-template-rows: 7% 93%;
 }
 
 #content_grid {

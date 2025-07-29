@@ -2,8 +2,7 @@
     <h1>Evenfall</h1>
     <div class="form_center">
         <%= form_with model: room, class: "simple_form" do | form | %>
-            <%= form.label :name %>
-            <%= form.text_field :name, required: true %>
+            <%= form.text_field :name, required: true, placeholder: "Name your room" %>
 
             <%= form.submit %>
         <% end %>
