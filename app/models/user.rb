@@ -7,6 +7,16 @@ class User < ApplicationRecord
   has_one_attached :profile_picture
 
   validate :valid_image
+  validate :is_unique
+
+  def is_unique
+    user_with_same_email = User.find_by(email_address: email_address)
+    user_with_same_username = User.find_by(username: username)
+
+    return unless !user_with_same_email.nil? || !user_with_same_username.nil?
+
+    errors.add(:base, "Username and/or email is already taken")
+  end
 
   def valid_image
     return unless profile_picture.attached?
