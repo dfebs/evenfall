@@ -14,4 +14,19 @@
     padding-left: 0.5em;
 }
 
+.chat_room header { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid;
+    border-color: var(--border);
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-width: 2px;
+    margin: 8px;
+    max-height: 70vh;
+}
+
 /* .room_card {} */
