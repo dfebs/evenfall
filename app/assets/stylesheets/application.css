@@ -43,7 +43,7 @@ a {
     color: var(--links)
 }
 
-button, input[type="submit"], a.navbutton {
+button, input[type="submit"], a.navbutton, .button_href {
     all: unset;
     border-radius: 0.5em;
     background-color: var(--links);
@@ -120,4 +120,8 @@ form textarea {
     width: 20em;
     height: 8em;
     resize: none;
+}
+
+.trix-button--icon::before {
+  filter: invert(100%);
 }

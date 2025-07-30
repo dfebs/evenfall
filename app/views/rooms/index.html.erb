@@ -1,7 +1,10 @@
 <div id="content_grid">
     <div id="chat_rooms">
+        <h1>Chat Rooms</h1>
+        <%= link_to "Create Room", new_room_path, class: "button_href" %>
+        <br>
+        <br>
         <%= render "rooms/room_cards", rooms: @rooms %>
-        <%= link_to "Create Room", new_room_path %>
     </div>
 </div>
 
