@@ -27,6 +27,7 @@ class RoomsController < ApplicationController
 
     rescue ActiveRecord::RecordInvalid
       respond_to do | format |
+        flash.now[:alert] = @room.errors.full_messages.join(", ")
         format.html { render :new, status: :unprocessable_entity }
       end
     end

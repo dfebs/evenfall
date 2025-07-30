@@ -1,7 +1,6 @@
 <%= turbo_stream_from "room_messages_sub_#{room.id}" %>
 <div id="messages" data-controller="messages" data-messages-target="messages">
-    <%= tag.div(flash[:alert], style: "color:var(--alert)") if flash[:alert] %>
-    <%= tag.div(flash[:notice], style: "color:var(--links)") if flash[:notice] %>
+    <%= render "layouts/flash" %>
     <p>--- This is the beginning of the chat ---</p>
     <% messages.each do |message| %>
         <%= render "messages/message", message: message, room: room %>

@@ -24,8 +24,8 @@ bin/rails server
 - [x] Nav bar overlaps room title on mobile
 - [x] Show the correct errors when passwords don't match or if username/email is duplicate
 - [x] Update message box to already fill the screen
+- [x] Make the room cards not look like crap, maybe add room descriptions
 - [ ] See if it's possible to only get the scrollbar on the chat to go down when you specifically send a message
-- [ ] Make the room cards not look like crap, maybe add room descriptions
 - [ ] Add character limits where possible
 - [ ] Make subscribe button to make user a basic member of the group. If nothing else, the room will show up on the sidebar for them.
 - [ ] On sidebar, sort rooms by owned first, then subscribed. 
