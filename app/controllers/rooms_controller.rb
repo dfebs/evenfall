@@ -35,7 +35,7 @@ class RoomsController < ApplicationController
   private
 
   def room_params
-    params.expect room: [ :name ]
+    params.expect room: [ :name, :description ]
   end
 
   def set_room

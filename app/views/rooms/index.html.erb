@@ -1,8 +1,6 @@
 <div id="content_grid">
     <div id="chat_rooms">
-        <% @rooms.each do | room | %>
-            <%= render "rooms/room_card", room: room %>
-        <% end %>
+        <%= render "rooms/room_cards", rooms: @rooms %>
         <%= link_to "Create Room", new_room_path %>
     </div>
 </div>
