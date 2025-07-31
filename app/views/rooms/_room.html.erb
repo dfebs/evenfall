@@ -2,7 +2,7 @@
 <div id=<%= dom_id(room) %> class="chat_room">
     <header>
         <h1><%= room.name %></h1>
-        <button>Test Button</button>
+        <h2>Created by <%= room.owner.username %></h2>
     </header>
     <%= render "messages/messages", room: room, messages: room.messages %>
     <%= render "messages/form", room: room, message: Message.new %>

@@ -25,8 +25,8 @@ bin/rails server
 - [x] Show the correct errors when passwords don't match or if username/email is duplicate
 - [x] Update message box to already fill the screen
 - [x] Make the room cards not look like crap, maybe add room descriptions
-- [ ] See if it's possible to only get the scrollbar on the chat to go down when you specifically send a message
-- [ ] Add character limits where possible
+- [x] See if it's possible to only get the scrollbar on the chat to go down when you specifically send a message. As a bonus, made this only scroll down when a change to the chat happens at all and the scroll position is low enough.
+- [x] Add character limits where possible. Didn't get around to doing the trix editor since that requires javascript. 
 - [ ] Make subscribe button to make user a basic member of the group. If nothing else, the room will show up on the sidebar for them.
 - [ ] On sidebar, sort rooms by owned first, then subscribed. 
 - [ ] Going to the room when it isn't created yet can show a page with a button that has you claim it. It will be a form with an invisible name entry.
