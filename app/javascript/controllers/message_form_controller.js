@@ -27,9 +27,17 @@ export default class extends Controller {
   }
 
   handleKeyDown = (event) => {
-    if (event.key === "Enter" && !this.isShiftHeld) {
+    if (event.key === "Enter" && !this.isShiftHeld && !this.isMobile()) {
       event.preventDefault();
       this.submitButtonTarget.click();
     }
   }
+
+  isMobile = function() {
+  if(window.matchMedia("(any-hover:none)").matches) {
+    return true;
+  } else {
+    return false;
+  }
+};
 }
