@@ -4,7 +4,7 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["messages"];
   connect() {
-    this.scrollMessagesToBottom()
+    this.scrollMessagesToBottom(true)
   
     const targetNode = this.messagesTarget;
     const config = { childList: true };
@@ -21,9 +21,10 @@ export default class extends Controller {
     this.observer.disconnect();
   }
 
-  scrollMessagesToBottom = () => {
+  scrollMessagesToBottom = (initial = false) => {
+    const isNearBottom = this.messagesTarget.scrollHeight - this.messagesTarget.scrollTop - this.messagesTarget.clientHeight < 200
     const lastChild = this.messagesTarget.children[this.messagesTarget.children.length - 1]
-    if (lastChild) lastChild.scrollIntoView();
+    if (lastChild && (isNearBottom || initial)) lastChild.scrollIntoView();
   }
 
   handleFrameLoad = (event) => {
