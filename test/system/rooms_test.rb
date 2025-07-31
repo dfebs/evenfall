@@ -6,6 +6,6 @@ class RoomsTest < ApplicationSystemTestCase
 
   test "View main page" do
     sign_in_as users(:one)
-    assert_selector "p", text: "It works!"
+    assert_selector "h1", text: "Chat Rooms"
   end
 end
