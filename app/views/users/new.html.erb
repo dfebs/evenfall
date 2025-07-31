@@ -6,16 +6,16 @@
             <h2 style="margin: 0 auto">Register</h2>
                 <%= render "layouts/flash" %>
             <div>
-                <%= form.email_field :email_address, placeholder: "Enter your email address" %>
+                <%= form.email_field :email_address, placeholder: "Enter your email address", maxlength: 30, size: 20 %>
             </div>
             <div>
-                <%= form.text_field :username, placeholder: "Enter your username" %>
+                <%= form.text_field :username, placeholder: "Enter your username", maxlength: 30, size: 20 %>
             </div>
             <div>
-                <%= form.password_field :password, placeholder: "Enter your password" %>
+                <%= form.password_field :password, placeholder: "Enter your password", maxlength: 30 %>
             </div>
             <div>
-                <%= form.password_field :password_confirmation, placeholder: "Confirm your password" %>
+                <%= form.password_field :password_confirmation, placeholder: "Confirm your password", maxlength: 30 %>
             </div>
             <div>
                 <%= form.submit %>
