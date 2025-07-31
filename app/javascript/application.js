@@ -5,3 +5,10 @@ import "controllers"
 import "trix"
 import "@rails/actiontext"
 
+const allowedImageTypes = ["image/png", "image/jpg", "image/jpeg"]
+
+document.addEventListener("trix-file-accept", e => {
+  if (!allowedImageTypes.includes(e.file.type)) {
+    e.preventDefault();
+  } 
+});
