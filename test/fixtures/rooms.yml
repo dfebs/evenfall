@@ -2,6 +2,8 @@
 
 one:
   name: room1
+  description: The coolest room ever
 
 two:
   name: room2
+  description: The 2nd coolest room ever
