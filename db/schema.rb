@@ -97,9 +97,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_07_30_122216) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "memberships", "rooms"
-  add_foreign_key "memberships", "users"
-  add_foreign_key "messages", "rooms"
-  add_foreign_key "messages", "users"
+  add_foreign_key "memberships", "rooms", on_delete: :cascade
+  add_foreign_key "memberships", "users", on_delete: :cascade
+  add_foreign_key "messages", "rooms", on_delete: :cascade
+  add_foreign_key "messages", "users", on_delete: :cascade
   add_foreign_key "sessions", "users"
 end
